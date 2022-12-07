@@ -309,7 +309,7 @@ function skipAds() {
 */
 	
 function closeAds() {
-		unpauseGame();
+		
 		footerAD.style.display = 'block';
 		mainContainer.style.display = 'none';
 		mixpanel.track('Skip Ad', {
@@ -323,7 +323,7 @@ function closeAds() {
 	
 	
 function closeEmptyInterstitialAds() {
-	unpauseGame();
+	
 	footerAD.style.display = 'block';
 	refreshfooterSlot();
 	mainContainer.style.display = 'none';
@@ -340,7 +340,7 @@ function closeEmptyInterstitialAds() {
 
 	
 function requestAds() {
-	pauseGame();
+	
 	footerAD.style.display = 'none';
    	refreshinterSlot();
 	mainContainer.style.display = 'block';
