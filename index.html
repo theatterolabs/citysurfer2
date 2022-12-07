@@ -311,8 +311,6 @@ function skipAds() {
 function closeAds() {
 		footerAD.style.display = 'block';
 		mainContainer.style.display = 'none';
-		GameMgr.ingamePause = !1;
-		
 		mixpanel.track('Skip Ad', {
   			'Game Name': "City Surfer",
 			'Ad Media Type': "Interstitial"
@@ -326,7 +324,6 @@ function closeAds() {
 function closeEmptyInterstitialAds() {
 
 	footerAD.style.display = 'block';
-	GameMgr.ingamePause = !1;
 	refreshfooterSlot();
 	mainContainer.style.display = 'none';
 	
